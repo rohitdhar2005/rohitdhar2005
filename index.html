@@ -213,11 +213,14 @@
             position: relative;
         }
 
-        .profile-image-inner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.profile-image-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* THIS fixes sidelining */
+    display: block;
+}
+
 
         .profile-image-placeholder {
             color: var(--text-dim);
@@ -1105,7 +1108,6 @@
                 <div class="profile-image-container">
                     <div class="profile-image-wrapper">
                         <div class="profile-image-inner" id="profile-image">
-                            
                             <img src="Profile.jpg" alt="">
                             <div class="profile-image-placeholder">
                             </div>
