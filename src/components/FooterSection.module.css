@@ -1,0 +1,69 @@
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.planetWrap {
+  width: 160px;
+  height: 160px;
+}
+
+.socials {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.socialLink {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.socialLink:hover {
+  color: var(--text);
+}
+
+.downloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 0.7rem 1.8rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  cursor: none;
+}
+
+.downloadBtn:hover {
+  background: rgba(168,85,247,0.1);
+  border-color: rgba(168,85,247,0.4);
+  box-shadow: 0 0 20px rgba(168,85,247,0.15);
+}
+
+.dollar {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hint {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.copy {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-top: 1rem;
+}

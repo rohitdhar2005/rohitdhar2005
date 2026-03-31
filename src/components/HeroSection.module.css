@@ -1,0 +1,229 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem 4rem 6rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.heading {
+  font-family: var(--font-mono);
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.role {
+  display: inline;
+}
+
+.caret {
+  color: var(--accent);
+  font-weight: 300;
+  animation: caretBlink 0.7s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes caretBlink {
+  50% { opacity: 0; }
+}
+
+.profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatarWrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2.5px solid var(--accent);
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.45);
+}
+
+.gpaBadge {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-blue);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}
+
+.info {
+  padding-top: 0.4rem;
+}
+
+.name {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.desc {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.recruiterInfo {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  overflow: hidden;
+}
+
+.recruiterInfo p {
+  margin-top: 0.2rem;
+}
+
+.techRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.techBadge {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.techBadge:hover {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.musicWidget {
+  margin-top: 0.5rem;
+}
+
+.musicNote {
+  font-size: 0.8rem;
+  margin-right: 0.4rem;
+}
+
+.listeningTo {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.musicCard {
+  margin-top: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 0.7rem 1rem;
+  max-width: 280px;
+  backdrop-filter: blur(8px);
+}
+
+.musicIcon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #393280, #5b21b6);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: #c4b5fd;
+}
+
+.musicInfo {
+  flex: 1;
+}
+
+.songName {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: var(--font-mono);
+}
+
+.artistName {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.musicControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.playBtn {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.progressBar {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  margin-top: 0.35rem;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  border-radius: 999px;
+  transition: width 0.3s linear;
+}
+
+.musicControls span:hover {
+  color: #c4b5fd;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
