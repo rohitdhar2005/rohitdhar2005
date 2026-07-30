@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import styles from './FooterSection.module.css'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
+import { resume_pdf } from '../../Rohit_Resume.pdf';
 
 function SmallPlanet() {
   const meshRef = useRef()
@@ -59,7 +60,7 @@ export default function FooterSection() {
       </div>
 
       <motion.a
-        href="/Rohit_Resume.pdf"
+        href={resume_pdf}
         download="Rohit_Dhar_Resume.pdf"
         className={styles.downloadBtn}
         whileHover={{ scale: 1.03 }}
